@@ -1,10 +1,13 @@
-package com.oop.tutorial1.movie;
+package com.oop.tutorial2;
+
+import java.util.List;
 
 public class Movie {
     private String title;
     private String category;
     private Director director;
     private int numAwards;
+    private List<Actor> actors;
 
     public Movie(String title, String category, Director director) {
         this.title = title;
@@ -44,13 +47,16 @@ public class Movie {
         this.numAwards = numAwards;
     }
 
+    public List<Actor> getActors() {
+        return actors;
+    }
+
+    public void setActors(List<Actor> actors) {
+        this.actors = actors;
+    }
+
     @Override
     public String toString() {
-        return "Movie{" +
-                "title='" + title + '\'' +
-                ", category='" + category + '\'' +
-                ", director=" + director +
-                ", numAwards=" + numAwards +
-                '}';
+        return String.format("Movie [title = %s, category = %s, director = %s, numAwards = %d]", title, category, director, numAwards);
     }
 }

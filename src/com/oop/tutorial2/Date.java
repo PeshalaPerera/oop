@@ -1,4 +1,4 @@
-package com.oop.tutorial1.movie;
+package com.oop.tutorial2;
 
 public class Date {
     private int day;
@@ -42,15 +42,11 @@ public class Date {
     }
 
     public String getDate() {
-        return this.toString();
+        return String.format("%d/%d/%d", day, month, year);
     }
 
     @Override
     public String toString() {
-        return "Date{" +
-                "day=" + day +
-                ", month=" + month +
-                ", year=" + year +
-                '}';
+        return String.format("Date [day = %d, month = %d, year = %d]", day, month, year);
     }
 }

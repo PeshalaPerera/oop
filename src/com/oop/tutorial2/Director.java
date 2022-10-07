@@ -1,4 +1,4 @@
-package com.oop.tutorial1.movie;
+package com.oop.tutorial2;
 
 public class Director {
     private String name;
@@ -45,11 +45,6 @@ public class Director {
 
     @Override
     public String toString() {
-        return "Director{" +
-                "name='" + name + '\'' +
-                ", surname='" + surname + '\'' +
-                ", numDirectedMovie=" + numDirectedMovie +
-                ", dob=" + dob +
-                '}';
+        return String.format("Director [name = %s, surname = %s, numDirectedMovie = %d, dob = %s]", name, surname, numDirectedMovie, dob.getDate());
     }
 }

@@ -1,4 +1,4 @@
-package com.oop.tutorial1.exercises;
+package com.oop.tutorial1;
 
 import java.util.Arrays;
 
