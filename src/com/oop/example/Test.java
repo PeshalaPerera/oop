@@ -12,7 +12,7 @@ import com.oop.example.polymorphism.Animal;
 import com.oop.example.polymorphism.Dog;
 import com.oop.example.polymorphism.Pig;
 
-public class Main {
+public class Test {
 
     public static void main(String[] args) {
         testEncapsulation();
